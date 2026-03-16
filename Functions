@@ -1,0 +1,37 @@
+'''
+#include <stdio.h>
+int addition(int a, int b);
+int subtraction(int a, int b);
+int multiplication(int a, int b);
+int division(int a, int b);
+int main() {
+int sum=addition(10,20);
+printf("Addition is %d ",sum);
+printf("\n");
+int diff=subtraction(20,10);
+printf("Subtraction is %d ",diff);
+printf("\n");
+int product=multiplication(20,10);
+printf("Multiplication is %d ",product);
+printf("\n");
+int divi=division(20,10);
+printf("Division is %d ",divi);
+printf("\n");
+}
+int addition(int a,int b){
+    int sum=a+b;
+    return sum;
+}
+int subtraction(int a,int b){
+    int diff=a-b;
+    return diff;
+}
+int multiplication(int a,int b){
+    int product=a*b;
+    return product;
+}
+int division(int a,int b){
+    int division=a/b;
+    return division;
+}
+'''
