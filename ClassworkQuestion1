@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+int binarynum,count=0,new=0,power=0,digit;
+scanf("%d",&binarynum);
+printf("Enter binary number: %d",binarynum);
+if(binarynum==0){
+return 0;
+}
+int temp=binarynum;
+while(temp!=0){
+temp=temp/10;
+count++;
+}
+//while(binarynum!=0){
+//digit=binarynum%10;
+//new += digit * pow(2, power);
+//power++;
+//binarynum=binarynum/10;
+//}
+for(int i=0;i<count;i++){
+digit=binarynum%10;
+new+=digit*pow(2,i);
+binarynum=binarynum/10;
+}
+printf("%d"new);
+}
