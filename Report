@@ -1,0 +1,84 @@
+MINI PROJECT REPORT
+TOPIC: Pointers in C: Powering Game Engines
+
+Team Members
+Neel Yetavadekar
+Aditya Shinde
+Malhar More
+Piyush Bhati
+Hardik Mathur
+
+Course: Foundations of Programming (CSE10010)
+Institution: MIT World Peace University
+Submission Date:
+ACKNOWLEDGEMENT:We want to say thank you to our teachers for helping us throughout this project. They gave us ideas and helped us understand how pointers work in C programming and how they are used in real life especially when making game engines. We also want to thank our friends and team members for working and helping us finish this project.
+
+ABSTRACT:
+Pointers are a tool in C programming but they can be hard to understand. This project tries to make pointers easier to understand by showing how they are used in life like in game engines. We look at the basics of pointers how memory works, how to use memory dynamically how to use pointers with structures and how to update data in time.
+
+We use examples from games to show how pointers help with memory management and fast data access. We also write example programs that show how to use pointers to update objects in time handle memory dynamically and make programs run faster.
+
+Our results show that pointers make programs run efficiently and allow for advanced programming techniques that are necessary for making games and other systems.
+
+TABLE OF CONTENTS:
+Literature Review
+System Design
+Implementation
+Results and Discussion
+Future Scope
+References
+INTRODUCTION:
+Problem Statement:
+It is hard for beginners to understand pointers but they are necessary for making high-performance games.
+Background:Pointers allow us to access memory directly which makes it easier to work with data run programs faster and use memory efficiently. Game engines rely heavily on pointers to manage objects, textures, physics and real-time updates.
+
+Objectives:
+* To understand the basics of pointers
+* To show how pointers are used in game engines
+* To make a system that can handle objects in time using pointers
+* To see how pointers can improve performance
+LITERATURE REVIEW:
+We looked at research papers and programming resources. Found:
+Sr No Topic Key Idea Gap
+1 Memory Management in C How to use memory efficiently Hard for beginners to understand
+2 Game Engine Architecture How to make games run in real time Pointers can be confusing
+3 Dynamic Memory Systems How to use memory flexibly Hard to debug
+SYSTEM DESIGN / METHODOLOGY:
+Approach:We made a simple game-like system where objects, like the player, enemy and score are stored and updated using pointers.
+Modules:
+* Pointer Basics Module
+* Structure Pointer Module
+* Dynamic Memory Module
+* Real-time Update Module
+Techniques Used:
+* Dereferencing
+* Call by reference
+* malloc()
+* Structure pointers
+IMPLEMENTATION:
+Development Environment
+Language: C
+Compiler: Online C Compiler / GCC
+Sample Concept Implemented
+* Updating the players position using pointers
+* Creating enemies dynamically using malloc
+* Tracking the score using pointer variables
+Testing:
+We tested for:
+* If memory allocation is correct
+* If updates happen in time
+* If there are any pointer errors
+RESULTS AND DISCUSSION:
+Our results show that using pointers makes the program:
+* Update data faster
+* Use memory efficiently
+* Run simulations in real time
+* Reduce the need to copy data
+This shows how important pointers are for making games and other high-performance systems.
+CONCLUSION:
+This project shows how pointers are used to make real-time systems. By using examples from games we made complex programming ideas easier to understand. We achieved our goals of understanding implementing and analyzing pointer usage.
+FUTURE SCOPE
+* Make a game using pointers
+* Add graphics to the game
+* Use pointers, with linked structures
+* Study how to optimize memory in game engines
