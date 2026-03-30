@@ -1,0 +1,30 @@
+'''
+#include <stdio.h>
+
+void main() {
+    int n, a[100], even[100], odd[100];
+    int eCount = 0, oCount = 0;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    printf("Enter %d integers:\n", n);
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+        if(a[i] % 2 == 0) {
+            even[eCount] = a[i];
+            eCount++;
+        } else {
+            odd[oCount] = a[i];
+            oCount++;
+        }
+    }
+    printf("\nEven numbers: ");
+    for(int i = 0; i < eCount; i++) {
+        printf("%d ", even[i]);
+    }
+    printf("\nOdd numbers: ");
+    for(int i = 0; i < oCount; i++) {
+        printf("%d ", odd[i]);
+    }
+    printf("\n");
+}
+'''
