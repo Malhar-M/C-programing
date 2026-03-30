@@ -1,9 +1,12 @@
 '''
 #include <stdio.h>
+int rec(int n);
 void main() {
     int num, fact = 1;
     printf("Enter a number: ");
     scanf("%d", &num);
+
+
     if (num == 0) { 
         printf("Factorial is 1");
     } 
@@ -11,10 +14,22 @@ void main() {
         printf("Invalid input");
     } 
     else {
+    int answer=rec(num);
+    printf("Factorial of %d using recursion is %d",num,answer);
+    printf("Factorial using iterative method is: ");
         for (int i = num; i >= 1; i--) {
             fact *= i;
         }
         printf("Factorial of %d is %d", num, fact);
     }
+}
+
+int rec(int n){
+  if(n<=0){
+return 1;
+}
+else{
+return n*rec(n-1);
+}
 }
 '''
