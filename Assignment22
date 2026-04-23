@@ -1,0 +1,77 @@
+'''q22)
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() {
+    char str1[100], str2[100];
+    int choice;
+
+    while (1) {
+        printf("\n--- String Operations Menu ---");
+        printf("\n1. Length of String (strlen)");
+        printf("\n2. Copy String (strcpy)");
+        printf("\n3. Concatenate Strings (strcat)");
+        printf("\n4. Compare Strings (strcmp)");
+        printf("\n5. Reverse String (strrev - non-standard)");
+        printf("\n6. Exit");
+        printf("\nSelect an option: ");
+        scanf("%d", &choice);
+
+        // Clear input buffer to handle string inputs correctly
+        getchar(); 
+
+        switch (choice) {
+            case 1:
+                printf("Enter a string: ");
+                gets(str1);
+                printf("Length: %zu\n", strlen(str1));
+                break;
+
+            case 2:
+                printf("Enter source string: ");
+                gets(str1);
+                strcpy(str2, str1);
+                printf("Target string after copy: %s\n", str2);
+                break;
+
+            case 3:
+                printf("Enter first string: ");
+                gets(str1);
+                printf("Enter second string: ");
+                gets(str2);
+                strcat(str1, str2);
+                printf("Combined string: %s\n", str1);
+                break;
+
+            case 4:
+                printf("Enter first string: ");
+                gets(str1);
+                printf("Enter second string: ");
+                gets(str2);
+                if (strcmp(str1, str2) == 0)
+                    printf("Strings are equal.\n");
+                else
+                    printf("Strings are not equal.\n");
+                break;
+
+            case 5:
+                printf("Enter string to reverse: ");
+                gets(str1);
+                // strrev is common in Windows/TurboC but not standard POSIX
+                // Using strrev(str1) if supported, otherwise manual reverse logic:
+                printf("Reversed string: %s\n", strrev(str1));
+                break;
+
+            case 6:
+                printf("Exiting program...\n");
+                exit(0);
+
+            default:
+                printf("Invalid choice! Please try again.\n");
+        }
+    }
+    return 0;
+}
+
+'''
