@@ -1,0 +1,46 @@
+'''q21
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    FILE *source, *target;
+    char sourcePath[100], targetPath[100];
+    char ch;
+
+    // Ask the user for file locations
+    printf("Enter the name of the file to copy from: ");
+    scanf("%s", sourcePath);
+
+    printf("Enter the name for the new copy: ");
+    scanf("%s", targetPath);
+
+    // Try to open the source file for reading
+    source = fopen(sourcePath, "r");
+    if (source == NULL) {
+        printf("Oops! I couldn't find or open the source file: %s\n", sourcePath);
+        return 1; 
+    }
+
+    // Try to open the target file for writing
+    target = fopen(targetPath, "w");
+    if (target == NULL) {
+        printf("Uh oh! I couldn't create the target file: %s\n", targetPath);
+        fclose(source); // Clean up the file we already opened
+        return 1;
+    }
+
+    // The actual copying process
+    // We read one character at a time until we hit the end of the file
+    while ((ch = fgetc(source)) != EOF) {
+        fputc(ch, target);
+    }
+
+    printf("\nSuccess! Everything from %s has been copied to %s.\n", sourcePath, targetPath);
+
+    // Always close your files to free up memory
+    fclose(source);
+    fclose(target);
+
+    return 0;
+}
+'''
